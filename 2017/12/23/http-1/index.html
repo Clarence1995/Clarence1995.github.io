@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="HTTP协议," />
 
 
 
@@ -82,13 +82,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Clarencezero">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="连接管理本章了解: HTTP如何使用TCP连接 TCP连接的时延、瓶颈以及存在的障碍 HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接 管理连接时应该以及不应该做的事情  4.1 TCP连接世界上几乎所有的HTTP通信都是由TCP/IP承载的,TCP/IP是全球计算机及网络设备都在使用的一种常用的分组交换网络分层协议集。一旦建立TCP/mIP连接,在客户端和服务端的计算机">
+<meta name="keywords" content="HTTP协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http">
+<meta property="og:url" content="http://yoursite.com/2017/12/23/http-1/index.html">
 <meta property="og:site_name" content="Clarencezero">
+<meta property="og:description" content="连接管理本章了解: HTTP如何使用TCP连接 TCP连接的时延、瓶颈以及存在的障碍 HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接 管理连接时应该以及不应该做的事情  4.1 TCP连接世界上几乎所有的HTTP通信都是由TCP/IP承载的,TCP/IP是全球计算机及网络设备都在使用的一种常用的分组交换网络分层协议集。一旦建立TCP/mIP连接,在客户端和服务端的计算机">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.dropbox.com/s/0jbwsc3hdbca3nt/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171223152827.png?dl=1">
+<meta property="og:updated_time" content="2017-12-23T10:35:19.069Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Clarencezero">
+<meta name="twitter:title" content="http">
+<meta name="twitter:description" content="连接管理本章了解: HTTP如何使用TCP连接 TCP连接的时延、瓶颈以及存在的障碍 HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接 管理连接时应该以及不应该做的事情  4.1 TCP连接世界上几乎所有的HTTP通信都是由TCP/IP承载的,TCP/IP是全球计算机及网络设备都在使用的一种常用的分组交换网络分层协议集。一旦建立TCP/mIP连接,在客户端和服务端的计算机">
+<meta name="twitter:image" content="https://www.dropbox.com/s/0jbwsc3hdbca3nt/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171223152827.png?dl=1">
 
 
 
@@ -118,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/23/http-1/"/>
 
 
 
 
 
-  <title>Clarencezero</title>
+  <title>http | Clarencezero</title>
   
 
 
@@ -143,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/Clarence1995" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -254,9 +260,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -286,9 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/23/http-1/" itemprop="url">http</a></h1>
+          <h1 class="post-title" itemprop="name headline">http</h1>
         
 
         <div class="post-meta">
@@ -360,24 +364,40 @@
       
 
       
-        
-          
-          连接管理本章了解:
-HTTP如何使用TCP连接
-TCP连接的时延、瓶颈以及存在的障碍
-HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
-管理连接时应该以及不应该做的事情
+        <h3 id="连接管理"><a href="#连接管理" class="headerlink" title="连接管理"></a>连接管理</h3><h4 id="本章了解"><a href="#本章了解" class="headerlink" title="本章了解:"></a>本章了解:</h4><ul>
+<li>HTTP如何使用TCP连接</li>
+<li>TCP连接的时延、瓶颈以及存在的障碍</li>
+<li>HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接</li>
+<li>管理连接时应该以及不应该做的事情</li>
+</ul>
+<h4 id="4-1-TCP连接"><a href="#4-1-TCP连接" class="headerlink" title="4.1 TCP连接"></a>4.1 TCP连接</h4><p>世界上几乎所有的HTTP通信都是由TCP/IP承载的,TCP/IP是全球计算机及网络设备都在使用的一种常用的分组交换网络分层协议集。一旦建立TCP/mIP连接,在客户端和服务端的计算机之间交换的报文就永远不会丢失、受损或失序</p>
+<h5 id="4-1-1-TCP的可靠数据管道"><a href="#4-1-1-TCP的可靠数据管道" class="headerlink" title="4.1.1 TCP的可靠数据管道"></a>4.1.1 TCP的可靠数据管道</h5><p>TCP为HTTP提供了一条可靠的比特传输管道.从TCP连接一端填入的字节会从另一端以原有的顺序、正确地传送过来</p>
+<h5 id="4-1-2-TCP流是分段的、由IP分组发送"><a href="#4-1-2-TCP流是分段的、由IP分组发送" class="headerlink" title="4.1.2 TCP流是分段的、由IP分组发送"></a>4.1.2 TCP流是分段的、由IP分组发送</h5><p>TCP的数据是通过名为IP分组(或IP数据报)的小数据块来发送的。这样的话,HTTP就是”HTTP over TCP over IP” 这个”协议栈”中的最顶层了。其安全版本HTTPS就是在HTTP和TCP之间插入了一个(称为TLS或SSL的)密码加密层</p>
+<p><img src="https://www.dropbox.com/s/0jbwsc3hdbca3nt/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171223152827.png?dl=1" alt="HTTPt和HTTPS网络协议栈"></p>
+<p>HTTP要传送一条报文时,会以<code>流</code>的形式将报文数据的内容通过一条打开的TCP连接按序传输.TCP收到数据流之后,会将数据流砍成被称作<code>段</code>的小数据块,并将段封装在IP分组中,通过因特网进行传输</p>
+<p>每个TCP段是由IP分组承载,从一个IP地址发送到另一个IP地址的.每个IP分组中都包括:</p>
+<ul>
+<li>一个IP分组首部(通常 20字节)</li>
+<li>一个TCP段首部(通常 20字节)</li>
+<li>一个TCP数据块(0个或多个字节)<br>IP首部包含了源和目的的IP地址、长度和其他一些标记.TCP段的首部包含了TCP端口号、TCP控制标记、以及用于数据排序和完整性检查的一些数字值</li>
+</ul>
+<h5 id="4-1-3-保持TCP连接的正确运行"><a href="#4-1-3-保持TCP连接的正确运行" class="headerlink" title="4.1.3 保持TCP连接的正确运行"></a>4.1.3 保持TCP连接的正确运行</h5><p>在任意时刻计算机都可以有几条TCP连接处于打开状态.TCP是通过端口号来保持所有这些连接的正确运行的<br>IP地址可以让你连接到正确的计算机,而端口号则可以将你连接到正确的应用程序上去.TCP是通过4个值来识别的:<code>&lt;源IP地址、源端口号、目的IP地址、目的端口号&gt;</code>,这四个值一起唯一地定义了一条连接</p>
+<h5 id="4-1-4-用TCP套接字编程"><a href="#4-1-4-用TCP套接字编程" class="headerlink" title="4.1.4 用TCP套接字编程"></a>4.1.4 用TCP套接字编程</h5><p>套接字API允许用户创建TCP的商战数据结构,将这些端点与远程服务器的TCP端点进行连接,并对数据流进行读写.TCP API隐藏了所有底层网络协议的握手细节,以及TCP数据流与IP分组之间的分段重装细节</p>
+<h4 id="4-2-对TCP性能的考虑"><a href="#4-2-对TCP性能的考虑" class="headerlink" title="4.2 对TCP性能的考虑"></a>4.2 对TCP性能的考虑</h4><h5 id="4-2-1-HTTP事务的延时"><a href="#4-2-1-HTTP事务的延时" class="headerlink" title="4.2.1 HTTP事务的延时"></a>4.2.1 HTTP事务的延时</h5><p>HTTP事务的时延有以下几个原因:</p>
+<ol>
+<li>客户端首先需要根据URI确定Web服务器的IP地址和端口号.如果最近没有对URI中的主机名进行访问,通过DNS解析系统将URI中的主机名转换成一个IP地址可能要花费数十秒的时间<br>注: 幸运的是,大多数HTTP客户端都有一个小的DNS缓存,用来保存近期所访问站点的IP地址,如果已经在本地”缓存”了IP地址,查询就可以立即完成.</li>
+<li>客户端TCP-&gt;(request)服务端,并等待服务器回送一个请求接受应答.每条新的TCP连接都会有连接建立时延.这个值通常最多只有一两秒,但如果有数百个HTTP事务的话,这个值会快速地叠加上去</li>
+<li>一旦建立连接,客户端会通过新建立的TCP管道来发送HTTP请求.数据到达时,Web服务器会从TCP连接中读取请求报文,并对请求进行处理</li>
+<li>Web服务器会回头HTTP响应,这也需要时间</li>
+</ol>
+<h5 id="4-2-2-性能聚集区域"><a href="#4-2-2-性能聚集区域" class="headerlink" title="4.2.2 性能聚集区域"></a>4.2.2 性能聚集区域</h5><ul>
+<li>TCP连接建立握手</li>
+<li>TCP慢启动拥塞控制</li>
+<li>数据聚集的Nagle算法</li>
+<li>用于捎带确认的TCp延迟确认算法</li>
+<li>TIME_WAIT时延和端口耗尽<br>m</li>
+</ul>
 
-4.1 TCP连接世界上几乎所有的HTTP通信都是由TCP/IP承载的,TCP/IP是全球计算机及网络
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/23/http-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -391,167 +411,45 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
     
     <div>
   
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
 </div>
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/22/http/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Clarencezero">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Clarencezero">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/22/http/" itemprop="url">HTTP(chapter 2)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T10:46:29+08:00">
-                2017-12-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTTP/" itemprop="url" rel="index">
-                    <span itemprop="name">HTTP</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/HTTP协议/" rel="tag"><i class="fa fa-tag"></i> HTTP协议</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          报文流报文流入源端服务器HTTP报文是在HTTP应用之间发送的数据块.这些数据块以一些文本形式的元信息(meta-information)开关,这些信息描述了报文的内容及含义,这些报文在客户端、服务器和代理之间流动HTTP使用流入(inbound)和流出(outbound)来描述事务处理(trans
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/22/http/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/22/http/" rel="next" title="HTTP(chapter 2)">
+                <i class="fa fa-chevron-left"></i> HTTP(chapter 2)
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-    <div>
-  
-</div>
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -561,10 +459,11 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -572,6 +471,10 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
 
 
           
+
+  
+
+
 
         </div>
         
@@ -592,8 +495,17 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -681,6 +593,22 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接管理"><span class="nav-number">1.</span> <span class="nav-text">连接管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本章了解"><span class="nav-number">1.1.</span> <span class="nav-text">本章了解:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-TCP连接"><span class="nav-number">1.2.</span> <span class="nav-text">4.1 TCP连接</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-1-TCP的可靠数据管道"><span class="nav-number">1.2.1.</span> <span class="nav-text">4.1.1 TCP的可靠数据管道</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-2-TCP流是分段的、由IP分组发送"><span class="nav-number">1.2.2.</span> <span class="nav-text">4.1.2 TCP流是分段的、由IP分组发送</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-3-保持TCP连接的正确运行"><span class="nav-number">1.2.3.</span> <span class="nav-text">4.1.3 保持TCP连接的正确运行</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-4-用TCP套接字编程"><span class="nav-number">1.2.4.</span> <span class="nav-text">4.1.4 用TCP套接字编程</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-对TCP性能的考虑"><span class="nav-number">1.3.</span> <span class="nav-text">4.2 对TCP性能的考虑</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-1-HTTP事务的延时"><span class="nav-number">1.3.1.</span> <span class="nav-text">4.2.1 HTTP事务的延时</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-2-性能聚集区域"><span class="nav-number">1.3.2.</span> <span class="nav-text">4.2.2 性能聚集区域</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -806,6 +734,10 @@ HTTP的优化,包括并行连接、keep-alive(持久连接)和管道化连接
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
