@@ -82,18 +82,20 @@
 
 
 
-<meta name="description" content="第二章 简单的HTTP协议 HTTP协议用于客户端和服务端之间的通信 通过请求和响应的交换达成通信 HTTP是不保存状态的协议 请求URI定位资源 告知服务器意图的HTTP方法  GET:获取资源 POST:传输实体主体 PUT:传输文件(由于PUT方法自身不带验证机制,存在安全性问题,因此一般网站不使用该方法,若配合验证机制,或使用REST标准的同类Web网站,就可能会开放使用PUT方法) HE">
+<meta name="description" content="与HTTP协作的Web服务器用单台虚拟主机实现多个域名HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了虚拟主机(Virtual Host,又称虚拟服务器)的功能。     通信数据转发程序: 代理、网关、隧道用于通信数据转">
 <meta name="keywords" content="图说HTTP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="图说HTTP之二">
-<meta property="og:url" content="http://yoursite.com/2017/12/25/图说HTTP/index.html">
+<meta property="og:title" content="图说HTTP之五">
+<meta property="og:url" content="http://yoursite.com/2017/12/25/图说HTTP之五/index.html">
 <meta property="og:site_name" content="Clarencezero">
-<meta property="og:description" content="第二章 简单的HTTP协议 HTTP协议用于客户端和服务端之间的通信 通过请求和响应的交换达成通信 HTTP是不保存状态的协议 请求URI定位资源 告知服务器意图的HTTP方法  GET:获取资源 POST:传输实体主体 PUT:传输文件(由于PUT方法自身不带验证机制,存在安全性问题,因此一般网站不使用该方法,若配合验证机制,或使用REST标准的同类Web网站,就可能会开放使用PUT方法) HE">
+<meta property="og:description" content="与HTTP协作的Web服务器用单台虚拟主机实现多个域名HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了虚拟主机(Virtual Host,又称虚拟服务器)的功能。     通信数据转发程序: 代理、网关、隧道用于通信数据转">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-25T07:19:41.267Z">
+<meta property="og:image" content="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1">
+<meta property="og:updated_time" content="2017-12-25T15:15:39.037Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="图说HTTP之二">
-<meta name="twitter:description" content="第二章 简单的HTTP协议 HTTP协议用于客户端和服务端之间的通信 通过请求和响应的交换达成通信 HTTP是不保存状态的协议 请求URI定位资源 告知服务器意图的HTTP方法  GET:获取资源 POST:传输实体主体 PUT:传输文件(由于PUT方法自身不带验证机制,存在安全性问题,因此一般网站不使用该方法,若配合验证机制,或使用REST标准的同类Web网站,就可能会开放使用PUT方法) HE">
+<meta name="twitter:title" content="图说HTTP之五">
+<meta name="twitter:description" content="与HTTP协作的Web服务器用单台虚拟主机实现多个域名HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了虚拟主机(Virtual Host,又称虚拟服务器)的功能。     通信数据转发程序: 代理、网关、隧道用于通信数据转">
+<meta name="twitter:image" content="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/25/图说HTTP/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/25/图说HTTP之五/"/>
 
 
 
 
 
-  <title>图说HTTP之二 | Clarencezero</title>
+  <title>图说HTTP之五 | Clarencezero</title>
   
 
 
@@ -273,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/图说HTTP/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/图说HTTP之五/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Clarencezero">
@@ -290,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">图说HTTP之二</h1>
+          <h1 class="post-title" itemprop="name headline">图说HTTP之五</h1>
         
 
         <div class="post-meta">
@@ -302,7 +304,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T00:06:07+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T20:05:52+08:00">
                 2017-12-25
               </time>
             
@@ -362,26 +364,35 @@
       
 
       
-        <h1 id="第二章-简单的HTTP协议"><a href="#第二章-简单的HTTP协议" class="headerlink" title="第二章 简单的HTTP协议"></a>第二章 简单的HTTP协议</h1><ul>
-<li>HTTP协议用于客户端和服务端之间的通信</li>
-<li>通过请求和响应的交换达成通信</li>
-<li>HTTP是不保存状态的协议</li>
-<li>请求URI定位资源</li>
-<li><p>告知服务器意图的HTTP方法</p>
+        <h1 id="与HTTP协作的Web服务器"><a href="#与HTTP协作的Web服务器" class="headerlink" title="与HTTP协作的Web服务器"></a><code>与HTTP协作的Web服务器</code></h1><h2 id="用单台虚拟主机实现多个域名"><a href="#用单台虚拟主机实现多个域名" class="headerlink" title="用单台虚拟主机实现多个域名"></a><code>用单台虚拟主机实现多个域名</code></h2><p>HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了<code>虚拟主机(Virtual Host,又称虚拟服务器)</code>的功能。    </p>
+<h2 id="通信数据转发程序-代理、网关、隧道"><a href="#通信数据转发程序-代理、网关、隧道" class="headerlink" title="通信数据转发程序: 代理、网关、隧道"></a><code>通信数据转发程序: 代理、网关、隧道</code></h2><p>用于通信数据转发的应用程序。它们可以配合服务器工作。<br>这些应用程序和服务器可以将请求转发给通信线路上的下一站服务器,并且能接收从那台服务器发送的响应再转发给客户端。    </p>
 <ul>
-<li><code>GET:</code>获取资源</li>
-<li><code>POST:</code>传输实体主体</li>
-<li><code>PUT:</code>传输文件(由于PUT方法自身不带验证机制,存在安全性问题,因此一般网站不使用该方法,若配合验证机制,或使用REST标准的同类Web网站,就可能会开放使用PUT方法)</li>
-<li><code>HEAD:</code>获得报文首部(用于确认URI的有效性及资源更新的日期时间等)</li>
-<li><code>DELETE:</code>删除文件(与PUT方法一样)</li>
-<li><code>OPTIONS:</code>询问支持方法(用来查询针对请求URI指定的资源支持的方法)</li>
-<li><p><code>TRACE:</code>追踪路径<br>  发送请求时,在Max-Forwards首部字段中填入数值,每经过一个服务端就将该数字减1,当数值刚好减到0时,就停止继续传输,最后接收到请求的服务器端则返回状态码200 OK的响应。<br>  客户端通过TRACE方法可以查询发送出去的请求是怎样被加工修改/篡改的。这是因为,请求想要连接到源目标服务器可能会代理跳转,TRACE方法就是用来确认连接过程中发生的一系列操作。<br>  但是,TRACE方法本来就不怎么常用,再加上容易引发XST(跨站追踪)攻击,通常就更不会用到了。</p>
+<li><p>代理<br>代理是一种有效转发功能的应用程序,它扮演了位于服务器和客户端”中间人”的角色,接收由客户端发送的请求并转发给服务器,同时也接收服务器返回的响应并转发给客户端。    </p>
 </li>
-<li><p><code>CONNECT:</code>要求用隧道协议连接代理<br>  CONNECT方法要求在与代理服务器通信时建立隧道,实现用隧道协议进行TCP通信。主要使用SSL(Secure Sockets Layer,安全套接层)和TLS(Transport Layer Security,传输层宝健)协议把通信内容加密后经网络隧道传输。</p>
+<li><p>网关<br>网关是转发其他服务器通信数据的服务器,接收从客户端发送来的请求时,它就像自己拥有资源的源服务器一样对请求进行处理。有时客户端可能都不会察觉,自己的通信目标是一个网关。    </p>
+</li>
+<li><p>隧道<br>隧道是在相隔甚远的客户端和服务器两者之间进行中转,并保持双方通信连接的应用程序。</p>
 </li>
 </ul>
+<h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a><code>代理</code></h3><p>基本行为是接收客户端发送的请求后转发给其他服务器。代理不改变请求URI,会直接发送给前方持有资源的目标服务器。<br>持有资源实体的服务器被称为源服务器。从源服务器返回的响应经过代理服务器后再传给客户端。<br>HTTP通信过程中,可级联多台代理~。请求和响应转发会经过数台类似锁链一样连接起来的代理服务器。转发时,需要附加Via首部字段以标记出经过的主机信息。<br>通过设置组织内部的代理服务器可做到针对特定URI访问的控制。<br>使用代理服务器理由:</p>
+<ul>
+<li>利用缓存技术减少网络带宽的流量    </li>
+<li>组织内部针对特定网站的控制,以获取访问日志为主要目的</li>
+<li>~~</li>
+</ul>
+<p>代理按两种基准分类:</p>
+<ul>
+<li><p><code>缓存代理:</code><br>代理转发响应时,缓存代理(Caching Proxy)会预先将资源的副本(缓存)保存在代理服务器上。<br>当代理再次接收到对相同资源的请求时,就可以不从源服务器那里获取资源,而是将之前缓存的资源作为响应返回。    </p>
+</li>
+<li><p><code>透明代理:</code><br>转发请求或响应时,不对报文做任何加工的代理类型称为透明代理(Transparent Proxy)。反之,对报文内容进行加工的代理被称为非透明代理。</p>
 </li>
 </ul>
+<h3 id="网关"><a href="#网关" class="headerlink" title="网关"></a><code>网关</code></h3><p>机制与代理十分相似。而网关能<code>使通信线路上的服务器提供非HTTP协议服务</code>。<br>利用网关能<code>提高通信的安全性,</code>因为可以<code>在客户端与网关之间的通信线程上加密以确保连接的安全</code>。比如,网关可以连接数据库,使用SQL语句查询数据。另外,在Web购物网站上进行信用卡结算时,网关可以和信用卡结算系统联动。    </p>
+<h3 id="隧道"><a href="#隧道" class="headerlink" title="隧道"></a><code>隧道</code></h3><p>可按要求建立一条与其他服务器的通信线路,届时使用<code>SSL</code>等加密手段进行通信。目的是<code>确保客户端能与服务器进行安全的通信。</code><br>隧道本身不会去解析HTTP请求。也就是说,请求保持原样中转给之后的服务器。隧道会在通信双方断开连接时结束。<br><img src="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1" alt="隧道"></p>
+<h2 id="保存资源的缓存"><a href="#保存资源的缓存" class="headerlink" title="保存资源的缓存"></a>保存资源的缓存</h2><p>缓存是指<code>代理服务器或客户端本地磁盘内保存的资源副本。</code>利用缓存可减少对资源服务器的访问,因此也就节省了通信流量和通信时间。<br>缓存服务器是代理服务器的一种,并归类在缓存代理类型中。当代理转发从服务器返回的响应时,代理服务器将会保存一份资源的副本。</p>
+<p>缓存服务器的优势在于利用缓存可避免多次从源服务器转发资源。因此客户端可就近从缓存服务器上获取资源,而源服务器也不必多冷处理相同的请求了。    </p>
+<h3 id="缓存的有效期限"><a href="#缓存的有效期限" class="headerlink" title="缓存的有效期限"></a>缓存的有效期限</h3><p>即使存在缓存,也会因为客户端的要求、缓存的有效期等因素,向源服务器确认资源的有效性。若判断缓存</p>
+<h3 id="客户端的缓存"><a href="#客户端的缓存" class="headerlink" title="客户端的缓存"></a>客户端的缓存</h3><p>缓存可以存在于浏览器中。</p>
 
       
     </div>
@@ -420,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/24/http-2/" rel="next" title="Web服务器">
-                <i class="fa fa-chevron-left"></i> Web服务器
+              <a href="/2017/12/25/图说HTTP之四/" rel="next" title="图说HTTP之四">
+                <i class="fa fa-chevron-left"></i> 图说HTTP之四
               </a>
             
           </div>
@@ -430,8 +441,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/25/图说HTTP1/" rel="prev" title="图说HTTP之一">
-                图说HTTP之一 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/25/图说HTTP之六/" rel="prev" title="图说HTTP之六">
+                图说HTTP之六 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -592,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-简单的HTTP协议"><span class="nav-number">1.</span> <span class="nav-text">第二章 简单的HTTP协议</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#与HTTP协作的Web服务器"><span class="nav-number">1.</span> <span class="nav-text">与HTTP协作的Web服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#用单台虚拟主机实现多个域名"><span class="nav-number">1.1.</span> <span class="nav-text">用单台虚拟主机实现多个域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通信数据转发程序-代理、网关、隧道"><span class="nav-number">1.2.</span> <span class="nav-text">通信数据转发程序: 代理、网关、隧道</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代理"><span class="nav-number">1.2.1.</span> <span class="nav-text">代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网关"><span class="nav-number">1.2.2.</span> <span class="nav-text">网关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隧道"><span class="nav-number">1.2.3.</span> <span class="nav-text">隧道</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存资源的缓存"><span class="nav-number">1.3.</span> <span class="nav-text">保存资源的缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存的有效期限"><span class="nav-number">1.3.1.</span> <span class="nav-text">缓存的有效期限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端的缓存"><span class="nav-number">1.3.2.</span> <span class="nav-text">客户端的缓存</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
