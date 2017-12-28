@@ -90,12 +90,12 @@
 <meta property="og:site_name" content="Clarencezero">
 <meta property="og:description" content="Web服务器Web服务器执行流程1. 接受客户端连接1.1 处理新连接客户端请求一条到Web服务器的TCP连接时,Web服务器会建立连接,判断连接的另一端是哪个客户端,从TCP连接中将IP地址解析出来.一旦新连接建立起来并被接受,服务器就会将新连接添加到其现在Web服务器连接列表中,做好监视连接上数据传输的准备.Web服务器可以随意拒绝或立即关闭任意一条连接.有些Web服务器会因为客户端IP地址或">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2017/12/24/http-2/www.baidu.com">
-<meta property="og:updated_time" content="2017-12-25T07:19:40.602Z">
+<meta property="og:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171224130007.png">
+<meta property="og:updated_time" content="2017-12-28T02:37:27.888Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web服务器">
 <meta name="twitter:description" content="Web服务器Web服务器执行流程1. 接受客户端连接1.1 处理新连接客户端请求一条到Web服务器的TCP连接时,Web服务器会建立连接,判断连接的另一端是哪个客户端,从TCP连接中将IP地址解析出来.一旦新连接建立起来并被接受,服务器就会将新连接添加到其现在Web服务器连接列表中,做好监视连接上数据传输的准备.Web服务器可以随意拒绝或立即关闭任意一条连接.有些Web服务器会因为客户端IP地址或">
-<meta name="twitter:image" content="http://yoursite.com/2017/12/24/http-2/www.baidu.com">
+<meta name="twitter:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171224130007.png">
 
 
 
@@ -383,7 +383,7 @@
 <li>复用I/O的服务器<br>为了支持大量连接,很多Web服务器都采用了复用结构.在复用结构中,要同时监视所以连接上的活动.当连接的状态发生变化时(比如,有数据可用,或出现错误时),就对那条连接进行少量的处理处理结束之后,将连接返回到开放连接列表中,等待下一次状态变化.只有在有事情可做时才会对连接进行处理在空闲连接上等待的时候并不会绑定线程和进程.     </li>
 <li>复用多线程Web服务器<br>有些系统会将多线程和复用功能结合在一起,以利用计算机平台上的多个CPU.多个线程(通常是一个物理处理器)中的每一个都在观察打开的连接(或打开的连接中的一个子集),并对每条连接执行少量的任务.</li>
 </ul>
-<p><img src="www.baidu.com" alt="Web服务器输入/输出结构">     </p>
+<p><img src="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171224130007.png" alt="Web服务器输入/输出结构">     </p>
 <h3 id="3-处理请求"><a href="#3-处理请求" class="headerlink" title="3 处理请求"></a>3 处理请求</h3><p>一旦Web服务器收到了请求,就可以根据方法、资源、首部和可选的主体部分来对请求进行处理了.     </p>
 <h3 id="4-对资源的映射及访问"><a href="#4-对资源的映射及访问" class="headerlink" title="4 对资源的映射及访问"></a>4 对资源的映射及访问</h3><p>Web服务器是资源服务器,它们负责发送预先创建好的内容,比如HTML页面或JPEG图片,以及支行在服务器上的资源生成程序所产生的动态内容.<br>在Web服务器将内容传送给客户端之前,要将请求报文中的URI映射为Web服务器上适当的内容或内容生成器,以识别出内容的源头.</p>
 <h4 id="4-1-虚拟托管的docroot"><a href="#4-1-虚拟托管的docroot" class="headerlink" title="4.1 虚拟托管的docroot"></a>4.1 虚拟托管的docroot</h4><h4 id="4-2-目录列表"><a href="#4-2-目录列表" class="headerlink" title="4.2 目录列表"></a>4.2 目录列表</h4><p>Web服务器可以接收对目录URL的请求,其路径可以解析为一个目录,而不是文件. </p>
@@ -543,7 +543,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -655,7 +655,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共12.2k字</span>
+  <span class="post-count">博客全站共14.4k字</span>
 </div>
         
 

@@ -82,18 +82,18 @@
 
 
 
-<meta name="description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     ##后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”,">
+<meta name="description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”, “">
 <meta name="keywords" content="KMP 算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KMP算法">
 <meta property="og:url" content="http://yoursite.com/2017/12/26/KMP算法/index.html">
 <meta property="og:site_name" content="Clarencezero">
-<meta property="og:description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     ##后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”,">
+<meta property="og:description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”, “">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-26T11:13:41.888Z">
+<meta property="og:updated_time" content="2017-12-27T00:33:01.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KMP算法">
-<meta name="twitter:description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     ##后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”,">
+<meta name="twitter:description" content="名词解释前缀如果字符串A和B,存在A=BS,其中S是任意的非空字符串,那么就称B为A的前缀。如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}我们把所有前缀组成的集合,称为字符串的前缀集合。     后缀如果字符串A和B,存在A=SB,其中S是任意的非空字符串,那么就称B为A的后缀。如: “Potter”的后缀包括{“otter”, “tter”, “ter”, “">
 
 
 
@@ -363,7 +363,7 @@
 
       
         <h1 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h1><h2 id="前缀"><a href="#前缀" class="headerlink" title="前缀"></a>前缀</h2><p>如果字符串A和B,存在<code>A=BS</code>,其中S是任意的非空字符串,那么就称B为A的前缀。<br>如: “Harry”的前缀包括{“H”, “Ha”, “Har”, “Harr”}<br>我们把所有前缀组成的集合,称为<code>字符串的前缀集合</code>。    </p>
-<p>##后缀<br>如果字符串A和B,存在<code>A=SB</code>,其中S是任意的非空字符串,那么就称B为A的后缀。<br>如: “Potter”的后缀包括{“otter”, “tter”, “ter”, “er”, “r”}<br>把所有后缀组成的集合,称为<code>字符串的后缀集合</code>。  </p>
+<h2 id="后缀"><a href="#后缀" class="headerlink" title="后缀"></a>后缀</h2><p>如果字符串A和B,存在<code>A=SB</code>,其中S是任意的非空字符串,那么就称B为A的后缀。<br>如: “Potter”的后缀包括{“otter”, “tter”, “ter”, “er”, “r”}<br>把所有后缀组成的集合,称为<code>字符串的后缀集合</code>。  </p>
 <p><code>注意:</code>字符串本身并不是自己的后缀。</p>
 <h2 id="PMT中的值"><a href="#PMT中的值" class="headerlink" title="PMT中的值"></a>PMT中的值</h2><p>PMT中的值是<code>字符串的前缀集合与后缀集合的交集中最长元素的长度</code>。<br>如:</p>
 <table>
@@ -487,6 +487,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/12/26/vue教程一/" rel="prev" title="vue教程一">
+                vue教程一 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -566,7 +570,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -645,7 +649,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#名词解释"><span class="nav-number">1.</span> <span class="nav-text">名词解释</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前缀"><span class="nav-number">1.1.</span> <span class="nav-text">前缀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PMT中的值"><span class="nav-number">1.2.</span> <span class="nav-text">PMT中的值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KMP算法核心"><span class="nav-number">2.</span> <span class="nav-text">KMP算法核心</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#名词解释"><span class="nav-number">1.</span> <span class="nav-text">名词解释</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前缀"><span class="nav-number">1.1.</span> <span class="nav-text">前缀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后缀"><span class="nav-number">1.2.</span> <span class="nav-text">后缀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PMT中的值"><span class="nav-number">1.3.</span> <span class="nav-text">PMT中的值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KMP算法核心"><span class="nav-number">2.</span> <span class="nav-text">KMP算法核心</span></a></li></ol></div>
             
 
           </div>
@@ -678,7 +682,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共12.2k字</span>
+  <span class="post-count">博客全站共14.4k字</span>
 </div>
         
 
