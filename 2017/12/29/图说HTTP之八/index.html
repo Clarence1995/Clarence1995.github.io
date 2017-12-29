@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="图说HTTP," />
 
 
 
@@ -82,13 +82,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Clarencezero">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="确认访问用户身份的认证何为认证核对信息:  密码: 只有本人才知道的字符串信息 动态令牌: 仅限本人持有的设备内显示的一次性密码 数字证书: 仅限本人(终端)持有的信息 生物认证: 指纹、虹膜等本人的生理信息 IC卡: 仅限本人持有的信息  HTTP使用的认证方式:  BASIC认证(基本认证): 安全系数不高,并不常用 DIGEST认证(摘要认证) SSL客户端认证 FormBase认证(基于表">
+<meta name="keywords" content="图说HTTP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图说HTTP之八">
+<meta property="og:url" content="http://yoursite.com/2017/12/29/图说HTTP之八/index.html">
 <meta property="og:site_name" content="Clarencezero">
+<meta property="og:description" content="确认访问用户身份的认证何为认证核对信息:  密码: 只有本人才知道的字符串信息 动态令牌: 仅限本人持有的设备内显示的一次性密码 数字证书: 仅限本人(终端)持有的信息 生物认证: 指纹、虹膜等本人的生理信息 IC卡: 仅限本人持有的信息  HTTP使用的认证方式:  BASIC认证(基本认证): 安全系数不高,并不常用 DIGEST认证(摘要认证) SSL客户端认证 FormBase认证(基于表">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171229105013.png">
+<meta property="og:updated_time" content="2017-12-29T02:56:49.052Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Clarencezero">
+<meta name="twitter:title" content="图说HTTP之八">
+<meta name="twitter:description" content="确认访问用户身份的认证何为认证核对信息:  密码: 只有本人才知道的字符串信息 动态令牌: 仅限本人持有的设备内显示的一次性密码 数字证书: 仅限本人(终端)持有的信息 生物认证: 指纹、虹膜等本人的生理信息 IC卡: 仅限本人持有的信息  HTTP使用的认证方式:  BASIC认证(基本认证): 安全系数不高,并不常用 DIGEST认证(摘要认证) SSL客户端认证 FormBase认证(基于表">
+<meta name="twitter:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171229105013.png">
 
 
 
@@ -118,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/29/图说HTTP之八/"/>
 
 
 
 
 
-  <title>归档 | Clarencezero</title>
+  <title>图说HTTP之八 | Clarencezero</title>
   
 
 
@@ -143,7 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/Clarence1995" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -254,411 +261,204 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/29/图说HTTP之八/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Clarencezero">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Clarencezero">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">图说HTTP之八</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T09:18:03+08:00">
+                2017-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 16 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/图说HTTP之十一/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之十一</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T09:18:25+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/图说HTTP之十/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之十</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T09:18:22+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/图说HTTP之九/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之九</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T09:18:18+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="确认访问用户身份的认证"><a href="#确认访问用户身份的认证" class="headerlink" title="确认访问用户身份的认证"></a>确认访问用户身份的认证</h1><h2 id="何为认证"><a href="#何为认证" class="headerlink" title="何为认证"></a>何为认证</h2><p>核对信息:</p>
+<ul>
+<li>密码: 只有本人才知道的字符串信息</li>
+<li>动态令牌: 仅限本人持有的设备内显示的一次性密码</li>
+<li>数字证书: 仅限本人(终端)持有的信息</li>
+<li>生物认证: 指纹、虹膜等本人的生理信息</li>
+<li>IC卡: 仅限本人持有的信息</li>
+</ul>
+<p>HTTP使用的认证方式:</p>
+<ul>
+<li>BASIC认证(基本认证): 安全系数不高,并不常用</li>
+<li>DIGEST认证(摘要认证)</li>
+<li>SSL客户端认证</li>
+<li>FormBase认证(基于表单认证)</li>
+</ul>
+<h3 id="DIGEST认证"><a href="#DIGEST认证" class="headerlink" title="DIGEST认证"></a>DIGEST认证</h3><p>使用质询/响应的方式(challenge/response),但不会像BASIC认证那样直接发送明文密码。<br><code>质询/响应方式:</code> 一开始一方会发送认证要求给另一方,接着使用从另一方那接收到的<code>质询码</code>计算生成响应码。最后将响应码返回给对方进行认证的方式。<br><code>注意:</code></p>
+<ul>
+<li>请求需要认证的资源时,服务器会随着状态码401 Authorization Required,返回带WWW-Authenticate首部字段的响应。</li>
+<li>首部字段必须包含 realm和nonce这两个字段信息。客户端就是依靠向服务器回头这两个值进行认证的。nonce是一种每次随返回的401响应生成的任意随机字符串。    </li>
+</ul>
+<h3 id="SSL客户端认证"><a href="#SSL客户端认证" class="headerlink" title="SSL客户端认证"></a>SSL客户端认证</h3><p>SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。<br><img src="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171229105013.png" alt="SSL认证步骤"></p>
+<p>一般会和表单组合一种<code>双因素认证(Two-factor authentication)</code>来使用。    </p>
+<p><code>双因素认证:</code> 认证过程中不仅需要密码这一个因素,还需要申请认证提供其他持有信息,从而作为另一个因素,与其组合使用的认证方式。<br>换言之,第一个认证因素的SSL客户端证书用来认证客户端计算机,另一个认证因素的密码则用来确定这是用户本人的行为。    </p>
+<h3 id="基于表单认证"><a href="#基于表单认证" class="headerlink" title="基于表单认证"></a>基于表单认证</h3><h4 id="Session管理及Cookie应用"><a href="#Session管理及Cookie应用" class="headerlink" title="Session管理及Cookie应用"></a>Session管理及Cookie应用</h4><p>一般会使用Cookie来管理Session。<br>基于表单认证本身是通过服务器端的Web应用,将客户端发送过来的用户ID和密码与之前登陆过的信息做匹配来进行认证的。    </p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/图说HTTP之八/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之八</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T09:18:03+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/图说HTTP之七/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之七</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T09:17:58+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/26/vue教程一/" itemprop="url">
-              
-                <span itemprop="name">vue教程一</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-26T20:43:58+08:00"
-              content="2017-12-26" >
-          12-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/26/KMP算法/" itemprop="url">
-              
-                <span itemprop="name">KMP算法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-26T17:10:41+08:00"
-              content="2017-12-26" >
-          12-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/25/图说HTTP之六/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之六</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-25T21:39:53+08:00"
-              content="2017-12-25" >
-          12-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/25/图说HTTP之五/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之五</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-25T20:05:52+08:00"
-              content="2017-12-25" >
-          12-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/25/图说HTTP之四/" itemprop="url">
-              
-                <span itemprop="name">图说HTTP之四</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-25T14:25:43+08:00"
-              content="2017-12-25" >
-          12-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/图说HTTP/" rel="tag"><i class="fa fa-tag"></i> 图说HTTP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/29/图说HTTP之七/" rel="next" title="图说HTTP之七">
+                <i class="fa fa-chevron-left"></i> 图说HTTP之七
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/29/图说HTTP之九/" rel="prev" title="图说HTTP之九">
+                图说HTTP之九 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -666,6 +466,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -686,8 +490,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -775,6 +588,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#确认访问用户身份的认证"><span class="nav-number">1.</span> <span class="nav-text">确认访问用户身份的认证</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#何为认证"><span class="nav-number">1.1.</span> <span class="nav-text">何为认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DIGEST认证"><span class="nav-number">1.1.1.</span> <span class="nav-text">DIGEST认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSL客户端认证"><span class="nav-number">1.1.2.</span> <span class="nav-text">SSL客户端认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于表单认证"><span class="nav-number">1.1.3.</span> <span class="nav-text">基于表单认证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Session管理及Cookie应用"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">Session管理及Cookie应用</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -900,6 +729,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 

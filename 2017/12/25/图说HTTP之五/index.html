@@ -90,12 +90,12 @@
 <meta property="og:site_name" content="Clarencezero">
 <meta property="og:description" content="与HTTP协作的Web服务器用单台虚拟主机实现多个域名HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了虚拟主机(Virtual Host,又称虚拟服务器)的功能。     通信数据转发程序: 代理、网关、隧道用于通信数据转">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1">
-<meta property="og:updated_time" content="2017-12-25T15:15:39.037Z">
+<meta property="og:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png">
+<meta property="og:updated_time" content="2017-12-29T02:57:08.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图说HTTP之五">
 <meta name="twitter:description" content="与HTTP协作的Web服务器用单台虚拟主机实现多个域名HTTP/1.1规范允许一台HTTP服务器搭建多个Web站点。比如,提供Web托管服务(Web Hosting Service)的供应商,可以用一台服务器为多位客户服务,也可以以每位客户持有的域名运行各自不同的网站。这是利用了虚拟主机(Virtual Host,又称虚拟服务器)的功能。     通信数据转发程序: 代理、网关、隧道用于通信数据转">
-<meta name="twitter:image" content="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1">
+<meta name="twitter:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png">
 
 
 
@@ -388,7 +388,7 @@
 </li>
 </ul>
 <h3 id="网关"><a href="#网关" class="headerlink" title="网关"></a><code>网关</code></h3><p>机制与代理十分相似。而网关能<code>使通信线路上的服务器提供非HTTP协议服务</code>。<br>利用网关能<code>提高通信的安全性,</code>因为可以<code>在客户端与网关之间的通信线程上加密以确保连接的安全</code>。比如,网关可以连接数据库,使用SQL语句查询数据。另外,在Web购物网站上进行信用卡结算时,网关可以和信用卡结算系统联动。    </p>
-<h3 id="隧道"><a href="#隧道" class="headerlink" title="隧道"></a><code>隧道</code></h3><p>可按要求建立一条与其他服务器的通信线路,届时使用<code>SSL</code>等加密手段进行通信。目的是<code>确保客户端能与服务器进行安全的通信。</code><br>隧道本身不会去解析HTTP请求。也就是说,请求保持原样中转给之后的服务器。隧道会在通信双方断开连接时结束。<br><img src="https://www.dropbox.com/s/h20ugcsooc7aasu/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png?dl=1" alt="隧道"></p>
+<h3 id="隧道"><a href="#隧道" class="headerlink" title="隧道"></a><code>隧道</code></h3><p>可按要求建立一条与其他服务器的通信线路,届时使用<code>SSL</code>等加密手段进行通信。目的是<code>确保客户端能与服务器进行安全的通信。</code><br>隧道本身不会去解析HTTP请求。也就是说,请求保持原样中转给之后的服务器。隧道会在通信双方断开连接时结束。<br><img src="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171225203507.png" alt="隧道"></p>
 <h2 id="保存资源的缓存"><a href="#保存资源的缓存" class="headerlink" title="保存资源的缓存"></a>保存资源的缓存</h2><p>缓存是指<code>代理服务器或客户端本地磁盘内保存的资源副本。</code>利用缓存可减少对资源服务器的访问,因此也就节省了通信流量和通信时间。<br>缓存服务器是代理服务器的一种,并归类在缓存代理类型中。当代理转发从服务器返回的响应时,代理服务器将会保存一份资源的副本。</p>
 <p>缓存服务器的优势在于利用缓存可避免多次从源服务器转发资源。因此客户端可就近从缓存服务器上获取资源,而源服务器也不必多冷处理相同的请求了。    </p>
 <h3 id="缓存的有效期限"><a href="#缓存的有效期限" class="headerlink" title="缓存的有效期限"></a>缓存的有效期限</h3><p>即使存在缓存,也会因为客户端的要求、缓存的有效期等因素,向源服务器确认资源的有效性。若判断缓存</p>
@@ -524,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -546,7 +546,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -636,7 +636,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共16.0k字</span>
+  <span class="post-count">博客全站共18.9k字</span>
 </div>
         
 
