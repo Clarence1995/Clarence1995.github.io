@@ -82,15 +82,20 @@
 
 
 
+<meta name="description" content="Web的攻击技术针对Web的攻击技术目前,来自互联网的攻击大多是冲着Web站点来的,它们大多把Web应用作为攻击目标。     攻击模式 主动攻击攻击者通过直接访问Web应用,把攻击代码传入的攻击模式。具有代表性的是SQL注入和OS命令注入攻击。      被动攻击指复用圈套策略执行攻击代码的攻击模式。       因输出值转义不完全引发的安全漏洞 客户端的验证 Web应用端(服务端)的验证">
 <meta name="keywords" content="图说HTTP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="图说HTTP之十一">
 <meta property="og:url" content="http://yoursite.com/2017/12/29/图说HTTP之十一/index.html">
 <meta property="og:site_name" content="Clarencezero">
+<meta property="og:description" content="Web的攻击技术针对Web的攻击技术目前,来自互联网的攻击大多是冲着Web站点来的,它们大多把Web应用作为攻击目标。     攻击模式 主动攻击攻击者通过直接访问Web应用,把攻击代码传入的攻击模式。具有代表性的是SQL注入和OS命令注入攻击。      被动攻击指复用圈套策略执行攻击代码的攻击模式。       因输出值转义不完全引发的安全漏洞 客户端的验证 Web应用端(服务端)的验证">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-29T02:57:03.548Z">
+<meta property="og:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180102125516.png">
+<meta property="og:updated_time" content="2018-01-02T05:31:39.985Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图说HTTP之十一">
+<meta name="twitter:description" content="Web的攻击技术针对Web的攻击技术目前,来自互联网的攻击大多是冲着Web站点来的,它们大多把Web应用作为攻击目标。     攻击模式 主动攻击攻击者通过直接访问Web应用,把攻击代码传入的攻击模式。具有代表性的是SQL注入和OS命令注入攻击。      被动攻击指复用圈套策略执行攻击代码的攻击模式。       因输出值转义不完全引发的安全漏洞 客户端的验证 Web应用端(服务端)的验证">
+<meta name="twitter:image" content="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180102125516.png">
 
 
 
@@ -359,7 +364,38 @@
       
 
       
-        
+        <h1 id="Web的攻击技术"><a href="#Web的攻击技术" class="headerlink" title="Web的攻击技术"></a>Web的攻击技术</h1><h2 id="针对Web的攻击技术"><a href="#针对Web的攻击技术" class="headerlink" title="针对Web的攻击技术"></a>针对Web的攻击技术</h2><p><img src="http://p1lx7ug7s.bkt.clouddn.com/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180102125516.png" alt="攻击事件倾向"><br>目前,来自互联网的攻击大多是冲着Web站点来的,它们大多把Web应用作为攻击目标。    </p>
+<h3 id="攻击模式"><a href="#攻击模式" class="headerlink" title="攻击模式"></a>攻击模式</h3><ul>
+<li><p>主动攻击<br>攻击者通过直接访问Web应用,把攻击代码传入的攻击模式。具有代表性的是<code>SQL注入</code>和<code>OS命令注入</code>攻击。    </p>
+</li>
+<li><p>被动攻击<br>指复用圈套策略执行攻击代码的攻击模式。    </p>
+</li>
+</ul>
+<h2 id="因输出值转义不完全引发的安全漏洞"><a href="#因输出值转义不完全引发的安全漏洞" class="headerlink" title="因输出值转义不完全引发的安全漏洞"></a>因输出值转义不完全引发的安全漏洞</h2><ul>
+<li>客户端的验证</li>
+<li>Web应用端(服务端)的验证</li>
+</ul>
+<ol>
+<li>输入值验证</li>
+<li>输出值验证</li>
+</ol>
+<h3 id="跨站脚本攻击"><a href="#跨站脚本攻击" class="headerlink" title="跨站脚本攻击"></a>跨站脚本攻击</h3><p>Cross-Site Scripting,XSS是指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或Javascript进行的一种攻击。<br>属于被动攻击模式。    </p>
+<h3 id="SQL注入攻击"><a href="#SQL注入攻击" class="headerlink" title="SQL注入攻击"></a>SQL注入攻击</h3><ul>
+<li>会执行非法SQL的SQL注入攻击<br><code>SQL注入(SQL Injection</code>是指针对Web应用使用的数据库,通过运行非法的SQL而产生的攻击。    </li>
+</ul>
+<h3 id="OS命令注入攻击"><a href="#OS命令注入攻击" class="headerlink" title="OS命令注入攻击"></a>OS命令注入攻击</h3><p>OS Command Injection是指通过Web应用,执行非法的操作系统命令达到攻击的目的。只要在能调用Shell函数的地方就有存在被攻击的风险。    </p>
+<h3 id="HTTP首部注入攻击"><a href="#HTTP首部注入攻击" class="headerlink" title="HTTP首部注入攻击"></a>HTTP首部注入攻击</h3><p>攻击者通过在响应首部字段内插入换行,添加任意响应首部或主体的一种攻击。属于被动攻击模式。<br>影响:    </p>
+<ul>
+<li>设置任何Cookie信息</li>
+<li>重定向至任意URL</li>
+<li>显示任意的主体(HTTP响应截断攻击)</li>
+</ul>
+<h3 id="邮件首部注入攻击"><a href="#邮件首部注入攻击" class="headerlink" title="邮件首部注入攻击"></a>邮件首部注入攻击</h3><h3 id="目录遍历攻击"><a href="#目录遍历攻击" class="headerlink" title="目录遍历攻击"></a>目录遍历攻击</h3><p>固然存在输出值转义问题,但更应该关闭指定对任意文件名的访问权限。    </p>
+<h3 id="远程文件包含漏洞"><a href="#远程文件包含漏洞" class="headerlink" title="远程文件包含漏洞"></a>远程文件包含漏洞</h3><p>指当部分脚本内容需要从其他文件读入时,攻击者复用指定外部服务器的URL充当依赖文件,让脚本读取之后,就可以运行任意脚本的一种攻击。    </p>
+<h2 id="因设置或设计上的缺陷引发的安全漏洞"><a href="#因设置或设计上的缺陷引发的安全漏洞" class="headerlink" title="因设置或设计上的缺陷引发的安全漏洞"></a>因设置或设计上的缺陷引发的安全漏洞</h2><h3 id="强制浏览"><a href="#强制浏览" class="headerlink" title="强制浏览"></a>强制浏览</h3><h3 id="不正确的错误消息处理"><a href="#不正确的错误消息处理" class="headerlink" title="不正确的错误消息处理"></a>不正确的错误消息处理</h3><h3 id="开放重定向"><a href="#开放重定向" class="headerlink" title="开放重定向"></a>开放重定向</h3><p>是一种对指定的任意URL作重定向跳转的功能。而于此功能相关联的安全漏洞是指,假如指定的重定向URL到某个具有恶意的Web网站,那么用户就会被诱导至那个Web网站。    </p>
+<h2 id="因会话管理疏忽引发的安全漏洞"><a href="#因会话管理疏忽引发的安全漏洞" class="headerlink" title="因会话管理疏忽引发的安全漏洞"></a>因会话管理疏忽引发的安全漏洞</h2><h3 id="会话劫持"><a href="#会话劫持" class="headerlink" title="会话劫持"></a>会话劫持</h3><p>通过某种手段拿到了用户的会话ID,并非法使用此会话伪装成用户,达到攻击的目的。    </p>
+<h3 id="会话固定攻击"><a href="#会话固定攻击" class="headerlink" title="会话固定攻击"></a>会话固定攻击</h3><p>对以窃取目标会话ID为主动攻击手段的会话劫持而言,会话固定攻击(Session Fixation)攻击会强制用户使用攻击者会话ID,属于被动攻击。</p>
+<h3 id="跨站点请求伪造"><a href="#跨站点请求伪造" class="headerlink" title="跨站点请求伪造"></a>跨站点请求伪造</h3><h2 id="其他安全漏洞"><a href="#其他安全漏洞" class="headerlink" title="其他安全漏洞"></a>其他安全漏洞</h2><h3 id="密码破解"><a href="#密码破解" class="headerlink" title="密码破解"></a>密码破解</h3><h3 id="点击劫持"><a href="#点击劫持" class="headerlink" title="点击劫持"></a>点击劫持</h3><h3 id="dos攻击"><a href="#dos攻击" class="headerlink" title="dos攻击"></a>dos攻击</h3><h3 id="后门程序-250"><a href="#后门程序-250" class="headerlink" title="后门程序 250"></a>后门程序 250</h3>
       
     </div>
     
@@ -457,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -547,6 +592,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Web的攻击技术"><span class="nav-number">1.</span> <span class="nav-text">Web的攻击技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#针对Web的攻击技术"><span class="nav-number">1.1.</span> <span class="nav-text">针对Web的攻击技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#攻击模式"><span class="nav-number">1.1.1.</span> <span class="nav-text">攻击模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#因输出值转义不完全引发的安全漏洞"><span class="nav-number">1.2.</span> <span class="nav-text">因输出值转义不完全引发的安全漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨站脚本攻击"><span class="nav-number">1.2.1.</span> <span class="nav-text">跨站脚本攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL注入攻击"><span class="nav-number">1.2.2.</span> <span class="nav-text">SQL注入攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OS命令注入攻击"><span class="nav-number">1.2.3.</span> <span class="nav-text">OS命令注入攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP首部注入攻击"><span class="nav-number">1.2.4.</span> <span class="nav-text">HTTP首部注入攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#邮件首部注入攻击"><span class="nav-number">1.2.5.</span> <span class="nav-text">邮件首部注入攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录遍历攻击"><span class="nav-number">1.2.6.</span> <span class="nav-text">目录遍历攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程文件包含漏洞"><span class="nav-number">1.2.7.</span> <span class="nav-text">远程文件包含漏洞</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#因设置或设计上的缺陷引发的安全漏洞"><span class="nav-number">1.3.</span> <span class="nav-text">因设置或设计上的缺陷引发的安全漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#强制浏览"><span class="nav-number">1.3.1.</span> <span class="nav-text">强制浏览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不正确的错误消息处理"><span class="nav-number">1.3.2.</span> <span class="nav-text">不正确的错误消息处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开放重定向"><span class="nav-number">1.3.3.</span> <span class="nav-text">开放重定向</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#因会话管理疏忽引发的安全漏洞"><span class="nav-number">1.4.</span> <span class="nav-text">因会话管理疏忽引发的安全漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#会话劫持"><span class="nav-number">1.4.1.</span> <span class="nav-text">会话劫持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#会话固定攻击"><span class="nav-number">1.4.2.</span> <span class="nav-text">会话固定攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跨站点请求伪造"><span class="nav-number">1.4.3.</span> <span class="nav-text">跨站点请求伪造</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他安全漏洞"><span class="nav-number">1.5.</span> <span class="nav-text">其他安全漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#密码破解"><span class="nav-number">1.5.1.</span> <span class="nav-text">密码破解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#点击劫持"><span class="nav-number">1.5.2.</span> <span class="nav-text">点击劫持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dos攻击"><span class="nav-number">1.5.3.</span> <span class="nav-text">dos攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后门程序-250"><span class="nav-number">1.5.4.</span> <span class="nav-text">后门程序 250</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -560,7 +621,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -573,7 +634,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.9k字</span>
+  <span class="post-count">博客全站共21.3k字</span>
 </div>
         
 
